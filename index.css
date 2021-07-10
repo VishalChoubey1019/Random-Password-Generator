@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.header{
+    color: red;
+    font-size: 30px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin-top: 10%;
+    font-size: 35px;
+    padding: 8px;
+    border-radius: 2mm;
+    text-align: center;
+}
+
+button:hover{
+    font-weight: bolder;
+}
+
+button:active{
+    font-weight: normal;
+}
+
+#output{
+    color: white;
+    font-size: 55px;
+    margin-top: 10%;
+    margin-bottom: 4%;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+}
+
+.presize{
+    padding-left: 5mm;
+    color:burlywood;    
+    font-size: 20px;
+}
+
+.resize{
+    margin-left: 5mm;
+    font-size: large;
+    margin-top: 2%;
+    color: chocolate;
+}
+
+
+@media screen and (max-width: 500px){
+
+    #output{
+        font-size: 30px;
+    }
+    .btn{
+        font-size: 20px;
+    }
+    .header{
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 275px){
+
+    #output{
+        font-size: 15px;     
+    }
+    button{
+        font-size: 10px;
+    }
+    .header{
+        text-align: center;
+        font-size: 14px;
+    }
+    .presize{
+        font-size: 14px;
+    }
+    .resize{
+        font-size: 10px;
+    }
+}
