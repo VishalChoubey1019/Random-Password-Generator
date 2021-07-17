@@ -5,6 +5,7 @@ const char = "@!$";
 let password="";
 let savedpasswordsize;
 let passwordsize; 
+let onetimecharuse = false;
 
 sizealert();
 
@@ -27,18 +28,22 @@ function resizefun(){
 
 function button(){
 
+    onetimecharuse = false;
+    
     while(passwordsize)
     {   
         
         x = Math.floor( Math.random() * 4 );
 
-        if(x<0.3)
-        charfunction();
-
-        else if(x<1.8)
+        if(x<1 && !onetimecharuse)
+        {
+            charfunction();
+            onetimecharuse = true;
+        }    
+        else if(x<2)
         capsfunction();
         
-        else if(x<2.8)
+        else if(x<3)
         numsfunction();
         
         else
