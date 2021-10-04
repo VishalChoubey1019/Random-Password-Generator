@@ -4,11 +4,11 @@
 }
 body{
     flex-wrap: wrap;
-    background-color: black;
+    background-color: rgb(7, 1, 1);
 }
 
 .header{
-    color: red;
+    color: rgb(204, 25, 25);
     font-size: 30px;
     margin-top: 5%;
     display: flex;
@@ -17,6 +17,9 @@ body{
 }
 
 .btn{
+    -webkit-tap-highlight-color: transparent;
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
     display: flex;
     justify-content: center;
 }
@@ -25,11 +28,14 @@ button{
     margin-top: 10%;
     font-size: 35px;
     padding: 8px;
-    border-radius: 2mm;
+    border-radius: 20px;
+    transition-duration: 0.4s;
     text-align: center;
 }
 
 button:hover{
+    background-color: #4CAF50;
+    color: white;
     font-weight: bolder;
 }
 
