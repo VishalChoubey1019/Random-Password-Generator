@@ -1,102 +1,102 @@
-*{
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
 }
-body{
-    flex-wrap: wrap;
-    background-color: rgb(7, 1, 1);
+body {
+  flex-wrap: wrap;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
 }
 
-.header{
-    color: rgb(204, 25, 25);
+.header {
+  color: rgb(252, 252, 252);
+  font-size: 30px;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 1px #979797;
+}
+
+.btn {
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin-top: 10%;
+  font-size: 35px;
+  padding: 8px;
+  border-radius: 20px;
+  transition: all 0.4s;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #27c5a3;
+  color: white;
+}
+
+button:active {
+  font-weight: normal;
+}
+
+#output {
+  color: white;
+  font-size: 55px;
+  margin-top: 10%;
+  margin-bottom: 4%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.presize {
+  padding-left: 5mm;
+  color: burlywood;
+  font-size: 20px;
+}
+
+.resize {
+  margin-left: 5mm;
+  font-size: large;
+  margin-top: 2%;
+  color: chocolate;
+}
+
+@media screen and (max-width: 500px) {
+  #output {
     font-size: 30px;
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-    text-shadow: 1px 1px #979797;
-}
-
-.btn{
-    -webkit-tap-highlight-color: transparent;
-    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    
-    display: flex;
-    justify-content: center;
-}
-
-button{
-    margin-top: 10%;
-    font-size: 35px;
-    padding: 8px;
-    border-radius: 20px;
-    transition-duration: 0.4s;
-    text-align: center;
-}
-
-button:hover{
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bolder;
-}
-
-button:active{
-    font-weight: normal;
-}
-
-#output{
-    color: white;
-    font-size: 55px;
-    margin-top: 10%;
-    margin-bottom: 4%;
-    text-align: center;
-    display: flex;
-    justify-content: center; 
-}
-
-.presize{
-    padding-left: 5mm;
-    color:burlywood;    
+  }
+  .btn {
     font-size: 20px;
+  }
+  .header {
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
-.resize{
-    margin-left: 5mm;
-    font-size: large;
-    margin-top: 2%;
-    color: chocolate;
-}
-
-
-@media screen and (max-width: 500px){
-
-    #output{
-        font-size: 30px;
-    }
-    .btn{
-        font-size: 20px;
-    }
-    .header{
-        text-align: center;
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 275px){
-
-    #output{
-        font-size: 15px;     
-    }
-    button{
-        font-size: 10px;
-    }
-    .header{
-        text-align: center;
-        font-size: 14px;
-    }
-    .presize{
-        font-size: 14px;
-    }
-    .resize{
-        font-size: 10px;
-    }
+@media screen and (max-width: 275px) {
+  #output {
+    font-size: 15px;
+  }
+  button {
+    font-size: 10px;
+  }
+  .header {
+    text-align: center;
+    font-size: 14px;
+  }
+  .presize {
+    font-size: 14px;
+  }
+  .resize {
+    font-size: 10px;
+  }
 }
