@@ -21,6 +21,14 @@ body {
   text-shadow: 1px 1px #979797;
 }
 
+.header-text{
+  margin-left: 40px;
+  color: gold;
+}
+
+.header-sub{
+  color: rgb(54, 211, 250);
+}
 .btn {
   -webkit-tap-highlight-color: transparent;
   transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
