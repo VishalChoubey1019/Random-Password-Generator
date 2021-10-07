@@ -1,111 +1,122 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");*/
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 * {
-  padding: 0;
-  margin: 0;
-  font-family: "Poppins", "JetBrains Mono", monospace;
+    padding: 0;
+    margin: 0;
+    /*font-family: "Poppins", "JetBrains Mono", monospace;*/
 }
+
 body {
-  width: 100%;
-  height: 100vh;
-  flex-wrap: wrap;
-  background-color: #181717;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    background-image: linear-gradient(40deg, #0B0C10, #464033, #c2b9b0)
 }
 
 .header {
-  color: rgb(252, 252, 252);
-  font-size: 25px;
-  margin-top: 3%;
-  display: flex;
-  justify-content: center;
-  text-shadow: 1px 1px #979797;
+    color: rgb(252, 252, 252);
+    font-size: 26px;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    text-shadow: 1px 1px #979797;
 }
 
-.header-text{
-  margin-left: 40px;
-  color: gold;
+.header-text {
+    margin-left: 40px;
+    color: rgb(19, 2, 27);
+    text-shadow: 0 0 2px #FEB700, 0 0 5px white;
+    background-color: rgb(241, 239, 235);
+    display: inline;
 }
 
-.header-sub{
-  color: rgb(54, 211, 250);
+.header-sub {
+    color: #490508;
+    font-weight: bolder;
+    background-color: rgb(241, 239, 235);
+    display: inline;
 }
+
 .btn {
-  -webkit-tap-highlight-color: transparent;
-  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-  display: flex;
-  justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    display: flex;
+    justify-content: center;
 }
 
 button {
-  align-items: center;
-  appearance: none;
-  margin-top: 5%;
-  background-color: #fcfcfd;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #36395a;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono", monospace;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow 0.15s, transform 0.15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow, transform;
-  font-size: 25px;
+    align-items: center;
+    appearance: none;
+    margin-top: 5%;
+    /*background-color: #fcfcfd;*/
+    border-radius: 8px;
+    /*border-width: 0;*/
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-sizing: border-box;
+    /*color: #36395a;*/
+    cursor: pointer;
+    display: inline-flex;
+    /*font-family: "JetBrains Mono", monospace;*/
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 25px;
+    background-color: #313f50;
+    color: white;
+    border: none;
+    opacity: 0.9;
+    box-shadow: 0 9px #999;
 }
 
 button:focus {
-  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
 button:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
-  transform: translateY(-2px);
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+    transform: translateY(-2px);
 }
 
 button:active {
-  box-shadow: #d6d6e7 0 3px 7px inset;
-  transform: translateY(2px);
+    box-shadow: #d6d6e7 0 3px 7px inset;
+    transform: translateY(2px);
 }
 
 .outer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #output {
-  border-radius: 15px;
-  padding: 1% 2%;
-  width: fit-content;
-  color: white;
-  font-size: 55px;
-  margin-top: 5%;
-  font-family: "JetBrains Mono", monospace;
-  margin-bottom: 4%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  border: 1px solid white;
+    border-radius: 15px;
+    padding: 1% 2%;
+    width: fit-content;
+    color: white;
+    font-size: 55px;
+    margin-top: 5%;
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom: 4%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
 }
+
 
 /* .presize {
   padding-left: 1%;
@@ -114,40 +125,81 @@ button:active {
 } */
 
 .resize {
-  margin-left: 5mm;
-  font-size: large;
-  margin-top: 2%;
-  color: chocolate;
+    margin-left: 5mm;
+    font-size: large;
+    margin-top: 2%;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    #output {
+        font-size: 48px;
+        margin: 40px;
+    }
+    .button {
+        font-size: 25px;
+        padding: 6px;
+        margin: 20px;
+    }
+    /*.header {
+      text-align: center;
+      font-size: 19px;
+      margin: 10px;
+  }*/
+    .header-text {
+        text-align: center;
+        font-size: 40px;
+        margin: 10px;
+    }
+    .header-sub {
+        text-align: center;
+        font-size: 40px;
+        margin: 10px;
+    }
 }
 
 @media screen and (max-width: 500px) {
-  #output {
-    font-size: 30px;
-  }
-  .btn {
-    font-size: 20px;
-  }
-  .header {
-    text-align: center;
-    font-size: 20px;
-  }
+    #output {
+        font-size: 27px;
+        margin: 35px;
+    }
+    .button {
+        font-size: 15px;
+        padding: 6px;
+        margin: 20px;
+    }
+    /*.header {
+        text-align: center;
+        font-size: 19px;
+        margin: 10px;
+    }*/
+    .header-text {
+        text-align: center;
+        font-size: 25px;
+        margin: 10px;
+    }
+    .header-sub {
+        text-align: center;
+        font-size: 25px;
+        margin: 10px;
+    }
 }
 
 @media screen and (max-width: 275px) {
-  #output {
-    font-size: 15px;
-  }
-  button {
-    font-size: 10px;
-  }
-  .header {
-    text-align: center;
-    font-size: 14px;
-  }
-  .presize {
-    font-size: 14px;
-  }
-  .resize {
-    font-size: 10px;
-  }
+    #output {
+        font-size: 15px;
+    }
+    button {
+        font-size: 10px;
+    }
+    .header {
+        text-align: center;
+        font-size: 14px;
+    }
+    .presize {
+        font-size: 14px;
+    }
+    .resize {
+        font-size: 10px;
+    }
 }
